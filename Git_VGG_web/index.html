@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Traffic Sign Recognition</title>
+    <!-- Import TensorFlow.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation (Placeholder for possible links) -->
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center">Traffic Sign Recognition</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="upload-section">
+            <h1>Upload a Traffic Sign Image</h1>
+
+            <!-- Image Upload Input -->
+            <div class="image-upload">
+                <p>Drag and drop or click to upload</p>
+                <!-- Set the id to "imageUpload" and accept only .png images -->
+                <input type="file" id="imageUpload" accept="image/png">
+            </div>
+        </section>
+
+        <section class="prediction-section">
+            <!-- Predict Button -->
+            <!-- Initially disabled until the model is loaded -->
+            <button id="predictButton" class="btn-large waves-effect waves-light" disabled>Predict</button>
+
+            <!-- Prediction Result Display -->
+            <div id="prediction" class="prediction-result card-panel"></div>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>&copy; 2023 Traffic Sign Recognition</p>
+        </div>
+    </footer>
+
+    <!-- Link to your JavaScript file that will handle model loading and prediction -->
+    <script src="index.js"></script>
+</body>
+</html>
